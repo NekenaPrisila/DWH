@@ -1,13 +1,13 @@
-/*CREATE DATABASE ecommerce_dwh_db
-    WITH ENCODING = 'UTF8'
-    LC_COLLATE = 'fr_FR.UTF-8'
-    LC_CTYPE = 'fr_FR.UTF-8'
-    TEMPLATE template0;
-*/
+CREATE DATABASE ecommerce_dwh_db
+WITH ENCODING = 'UTF8'
+LC_COLLATE = 'fr_FR.UTF-8'
+LC_CTYPE = 'fr_FR.UTF-8'
+TEMPLATE template0;
+
+\c ecommerce_dwh_db;
 
 CREATE SCHEMA IF NOT EXISTS raw;
 SET search_path = raw;
-
 
 -- Tables RAW (tous les champs en TEXT, pas de PK, pas de FK)
 CREATE TABLE categories_raw

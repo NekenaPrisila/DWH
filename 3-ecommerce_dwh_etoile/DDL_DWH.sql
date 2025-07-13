@@ -67,3 +67,10 @@ CREATE TABLE fact_sales
     total_amount       NUMERIC(10, 2),
     payment_method_key INT
 );
+
+create sequence if not exists seq_dim_payment_method_key start 1;
+create sequence if not exists seq_dim_time_key start 1;
+create sequence if not exists seq_dim_date_key start 1;
+create sequence if not exists seq_dim_product_key start 1;
+create sequence if not exists seq_dim_customer_key start 1;
+create sequence if not exists seq_fact_sales_key start 1;
